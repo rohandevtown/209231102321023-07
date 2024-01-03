@@ -9,9 +9,9 @@
 
 
 #        Pages:                                 HOCs (Layouts):
-    >> Home.Page.jsx                            Default.Hoc.jsx
-    >> Movie.Page.jsx                           Movie.Hoc.jsx
-    >> Play.Page.jsx                            Default.Hoc.jsx
+    >> Home.Page.jsx                            Default.layout.jsx
+    >> Movie.Page.jsx                           Movie.layout.jsx
+    >> Play.Page.jsx                            Default.layout.jsx
 
 # Components:
     >> Cast                             Cast.Component.jsx
@@ -36,6 +36,8 @@
                     npm install slick-carousel     
     >> Axios: npm i axios 
     >> HeadlessUI: npm install @headlessui/react
+    >> React-Icons: npm install react-icons
+    >> React Router Dom: npm i react-router-dom
                        
 
 
@@ -48,4 +50,5 @@
     >> https://www.npmjs.com/package/axios
     >> https://axios-http.com/docs/example
     >> https://headlessui.com/react/dialog
+    >> https://react-icons.github.io/react-icons/
 
