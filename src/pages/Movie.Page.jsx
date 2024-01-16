@@ -6,6 +6,8 @@ import { MovieContext } from "../context/Movie.context";
 import Slider from "react-slick";
 import { FaCcVisa, FaCcApplePay } from "react-icons/fa";
 import PosterSlider from "../components/PosterSlider/PosterSlider.Component";
+import MovieHero from "../components/MovieHero/MovieHero.Component";
+import Cast from "../components/Cast/Cast.Component";
 
 const MoviePage = () => {
   const { id } = useParams();
@@ -42,13 +44,89 @@ const MoviePage = () => {
     requestMovie();
   }, [id]);
 
-  const settingsCast = {};
+  const settingsCast = {
+    arrows: true,
+    slidesToShow: 3,
+    infinite: true,
+    dots: true,
+    // speed: 500,
+    slidesToScroll: 1,
 
-  const settings = {};
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  const settings = {
+    arrows: true,
+    slidesToShow: 3,
+    infinite: true,
+    dots: true,
+    // speed: 500,
+    slidesToScroll: 1,
+
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <>
-      {/* <MovieHero /> */}
+      <MovieHero />
       <div className="my-12 container px-4 lg:ml-20 lg:w-2/1">
         <div className="flex flex-col items-start gap-3">
           <h1 className="text-gray-800 font-bold text-2xl">About the movie</h1>
@@ -99,6 +177,20 @@ const MoviePage = () => {
         </div>
 
         {/* Cast & Crew */}
+        <div className="my-8">
+          <h2 className="text-gray-800 font-bold text-2xl mb-4">
+            Cast and Crew
+          </h2>
+          <Slider>
+            {cast.map((castData) => (
+              <Cast
+                image={castData.profile_path}
+                castName={castData.original_name}
+                role={castData.character}
+              />
+            ))}
+          </Slider>
+        </div>
 
         <div className="my-8">
           <hr />
