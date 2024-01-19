@@ -130,10 +130,149 @@ Linux                                                   Unix
                                   ||--Development -> Keeps close eye on POD
 
 
+Docker:
+    >> Image
+        >> container 1
+        >> conatiner 2..
+        >> ..
+        >> conatiner n
+
+
+Kuberneetes: 
+    >> Maste Node
+        >> Developer
+            >> POD (Child Node 1)        
+            >> Child Nodee 2..
+            >> ..
+            >> Child Node n
+
+## Docker >> Kubeernetes
+
+AWS (EC2)(VM)
+
+VM
+                    Kubeernetes
+Base OS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 16th Devops
 17th Resume 
 18th Last Day
 
 Project Submission Deadline: 29th Jan
+
+
+
+
+
+
+## Resume Building
+    >> Resume Validation: https://resumeworded.com/
+    >> Resume Templates: https://www.canva.com/templates/?query=resume
+    >> Sections of a resume:
+        # Name
+        # Designation
+        # If Experienced 
+            >> Software Engineer (Sept 23 - Till Date):
+                    Short detailed work experience
+        # Contact Details (Email, Phone Num, LinkedIn, GitHub)   
+        # Skills   
+        # Education Qualification:
+            Master Degree  (Jan 22 - jun 23)  University Name : 80%
+            Degree
+            PU
+            10th    
+        # Projects
+            Project Title (Start Date - End Date)
+                Project Summary
+        # Achievements   
+
+    >> https://quillbot.com/   
+
+
+
+
+## Job Platforms:
+    >> LinkedIn
+    >> Naukri
+    >> Internshala
+    >> GeekTrust
+    >> Cutshort
+    >> Monster JObs
+
+
+
+    Agenda:
+        What Next?
+        Projesct Submission
+        Technical Qns
+        Sendoff
+
+
+
+## What Next?
+    >> Next.js
+    >> Electron (Window Application)
+    >> React Native (IOS or Android Application)
+    >> ThreeJS
+    >> GSAP or Framer Motion (Animations)
+    >> Testing (Cypress, React Testing Library)
+
+
+## Job Roles:
+    >> S/W Dev
+    >> S/W Eng
+    >> Full Stack Dev
+    >> Front End Dev
+    >> Back End Dev
+    >> React Dev
+    >> Angular Dev
+    >> NodeJs Dev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
